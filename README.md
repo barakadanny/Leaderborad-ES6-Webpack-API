@@ -1,56 +1,34 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Leaderboard
 
-# Project Name
-
-> Description the project.
-
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external `Leaderboard API service`.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML
+- CSS
+- JavaScript
+- Webpack
+- Leaderboard API service
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Basic knowledge of JavaScript
+- Basic knowledge of webpack
+- Basic knowledge callbacks and promises
+
 ### Setup
 
-### Install
+- run `npm install` to install all dependencies
+- then `npm run start:dev` to lunch the project in the browser
 
-### Usage
+👤 **Baraka Danny**
 
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@barakadan](https://github.com/barakadanny)
+- LinkedIn: [danny baraka](https://www.linkedin.com/in/danny-baraka-589156169/)
 
 ## 🤝 Contributing
 
