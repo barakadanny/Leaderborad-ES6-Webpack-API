@@ -25,6 +25,11 @@ To get a local copy up and running follow these simple example steps.
 - run `npm install` to install all dependencies
 - then `npm run start:dev` to lunch the project in the browser
 
+👤 **Baraka Danny**
+
+- GitHub: [@barakadan](https://github.com/barakadanny)
+- LinkedIn: [danny baraka](https://www.linkedin.com/in/danny-baraka-589156169/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
