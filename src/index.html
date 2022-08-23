@@ -16,23 +16,7 @@
                     <button>Refresh</button>
                 </div>
                 <table>
-                    <tbody>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>Jane Doe</td>
-                            <td>90</td>
-                        </tr>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>100</td>
-                        </tr>
-                        <tr>
-                            <td>Jane Doe</td>
-                            <td>90</td>
-                        </tr>
+                    <tbody id="user-list">
                     </tbody>
                 </table>
             </div>
@@ -40,9 +24,9 @@
                 <div class="right-header">
                     <h2>Add your score</h2>
                 </div>
-                <form action="" method="post">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="number" name="score" placeholder="Score">
+                <form id="user-form" action="submit">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="number" id="score" name="score" placeholder="Score">
                     <button class="add-btn" type="submit">Submit</button>
                 </form>
             </div>
