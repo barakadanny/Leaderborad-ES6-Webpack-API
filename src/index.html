@@ -7,6 +7,46 @@
     <title>Leaderboard</title>
 </head>
 <body>
-    <h1>This is the Home page</h1>
+    <main>
+        <h1>Leaderboard</h1>
+        <div class="content">
+            <div class="left-side">
+                <div class="left-header">
+                    <h2>Recent scores</h2>
+                    <button>Refresh</button>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right-side">
+                <div class="right-header">
+                    <h2>Add your score</h2>
+                </div>
+                <form action="index.php" method="post">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="number" name="score" placeholder="Score">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
