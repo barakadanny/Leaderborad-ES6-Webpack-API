@@ -1,3 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray-color: #8a8a8a;
+    --color-secondary: #eaeaea;
+    --white-color: #fff;
+    --color-quaternary: #f5f5f5;
+    --text-color: #333;
+    --success-color: #28a745;
+}
+
+button {
+    padding: 5px;
+    border: 1px solid var(--gray-color);
+    cursor: pointer;
+    max-width: 70px;
+}
+
 body {
-    background-color: red; /* #f5f5f5 */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--color-quaternary);
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid var(--gray-color);
+    margin-top: 60px;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-title {
+    padding: 0 10px;
+}
+
+/* right side css */
+.left-side {
+    width: 50%;
+}
+
+.left-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid var(--gray-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-secondary);
+}
+
+/* right side css */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+}
+
+form input {
+    border: 1px solid var(--gray-color);
+    padding: 5px;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--text-color);
+    outline: none;
 }
