@@ -1,8 +1,8 @@
-import Store from './store.js';
+import { getScores } from './store.js';
 
 class UI {
   static displayUsers() {
-    const users = Store.getUser();
+    const users = Store.getScores();
 
     users.forEach((user) => UI.addUserToList(user));
   }
