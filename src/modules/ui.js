@@ -1,27 +1,15 @@
 import { getScores } from './store.js';
 
-class UI {
-  static displayUsers() {
-    const users = Store.getScores();
+const list = document.querySelector('#user-list');
 
-    users.forEach((user) => UI.addUserToList(user));
-  }
-
-  static addUserToList(user) {
-    const list = document.querySelector('#user-list');
-
+const renderScores = async () => {
+  const scores = await getScores();
+  scores.forEach((data) => {
     const row = document.createElement('tr');
-    row.innerHTML = `
-        <td>${user.name}</td>
-        <td>${user.score}</td>
-    `;
-    list.appendChild(row);
-  }
+    row.className = 'list-group-item';
+    row.innerHTML = `<td>${data.user}</td> <td>${data.score}</td>`;
+  });
+  list.appendChild(row);
+};
 
-  static clearFields() {
-    document.querySelector('#name').value = '';
-    document.querySelector('#score').value = '';
-  }
-}
-
-export default UI;
+export default renderScores;

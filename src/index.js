@@ -1,5 +1,5 @@
 import './style.css';
-import Store from './modules/store.js';
+import { sendNewScore } from './modules/store.js';
 import UI from './modules/ui.js';
 import User from './modules/user.js';
 
@@ -16,11 +16,8 @@ form.addEventListener('submit', (e) => {
 
   const user = new User(name, score);
 
-  Store.addUser(user);
-  UI.addUserToList(user);
+  sendNewScore.sendUser();
+  UI.addUserToList();
 
   UI.clearFields();
-
-  //   console.log(name, score);
-  //   console.log('form submitted:' + name + ' ' + score);
 });
