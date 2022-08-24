@@ -10,8 +10,8 @@ const sendUser = () => {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
-      body: JSON.stringify({ name: 'test' }),
-    }
+      body: JSON.stringify({ name: 'Baraka Danny game' }),
+    },
   );
 };
 
@@ -25,13 +25,12 @@ const sendNewScore = () => {
         Accept: 'application/json',
       },
       body: JSON.stringify({ user: userName, score: userScore }),
-    }
+    },
   );
 };
 
 const getScores = async () => {
-  const url =
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/nONLcYfe5VIS7yt3lQIO/scores/';
+  const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/nONLcYfe5VIS7yt3lQIO/scores/';
   const data = await fetch(url);
   const scores = await data.json();
   return scores.result;

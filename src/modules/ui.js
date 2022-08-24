@@ -8,8 +8,8 @@ const renderScores = async () => {
     const row = document.createElement('tr');
     row.className = 'list-group-item';
     row.innerHTML = `<td>${data.user}</td> <td>${data.score}</td>`;
+    list.appendChild(row);
   });
-  list.appendChild(row);
 };
 
 export default renderScores;
