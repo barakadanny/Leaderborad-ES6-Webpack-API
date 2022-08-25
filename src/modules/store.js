@@ -1,19 +1,12 @@
-class Store {
-  static getUser() {
-    let users;
-    if (localStorage.getItem('users') === null) {
-      users = [];
-    } else {
-      users = JSON.parse(localStorage.getItem('users'));
-    }
-    return users;
-  }
+const sendNewScore = async (url, data) => {
+  const post = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  };
+  await fetch(url, post);
+};
 
-  static addUser(user) {
-    const users = this.getUser();
-    users.push(user);
-    localStorage.setItem('users', JSON.stringify(users));
-  }
-}
-
-export default Store;
+export default sendNewScore;
