@@ -83,10 +83,6 @@ table {
   border: none;
 }
 
-/* tr:nth-child(even) {
-  background-color: var(--color-primary);
-} */
-
 /* right side css */
 form {
   display: flex;
