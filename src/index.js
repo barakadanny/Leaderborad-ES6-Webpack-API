@@ -1,25 +1,30 @@
 import './style.css';
-import { sendNewScore } from './modules/store.js';
-import renderScores from './modules/ui.js';
+import sendNewScore from './modules/store.js';
+import getData from './modules/get.js';
 
-// display users onload of the page
-document.addEventListener('DOMContentLoaded', () => {
-  document
-    .querySelector('.refresh-button')
-    .addEventListener('click', async () => {
-      renderScores();
-    });
+const url =
+  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fadf/scores';
 
-  const form = document.querySelector('#user-form');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    sendNewScore();
-
-    document.querySelector('#name').value = '';
-    document.querySelector('#score').value = '';
-  });
-
-  renderScores();
+document.querySelector('.refresh-button').addEventListener('click', () => {
+  window.location.reload();
 });
+
+const form = document.querySelector('#user-form');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const userName = document.querySelector('#name').value;
+  const userScore = document.querySelector('#score').value;
+
+  const data = {
+    user: userName,
+    score: userScore,
+  };
+
+  sendNewScore(url, data);
+
+  document.querySelector('#name').value = '';
+  document.querySelector('#score').value = '';
+});
+getData(url);

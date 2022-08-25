@@ -1,7 +1,4 @@
-// const userName = document.querySelector('#name').value;
-// const userScore = document.querySelector('#score').value;
-
-const sendNewScore = async () => {
+const sendNewScore = async (url, data) => {
   const post = {
     method: 'POST',
     headers: {
