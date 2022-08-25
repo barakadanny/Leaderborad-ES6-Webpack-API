@@ -2,8 +2,7 @@ import './style.css';
 import sendNewScore from './modules/store.js';
 import getData from './modules/get.js';
 
-const url =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fadf/scores';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fadf/scores';
 
 document.querySelector('.refresh-button').addEventListener('click', () => {
   window.location.reload();
